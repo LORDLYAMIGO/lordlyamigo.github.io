@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing Against Noise | Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #fffeee;
+      --ink: #2a1625;
+      --accent-1: #ff2580;
+      --accent-2: #2925ff;
+      --border: #ff0000;
+      --card: rgba(255, 255, 255, 0.84);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      background-image: url("Rectangle4.png");
+      color: var(--ink);
+      font-family: "EB Garamond", serif;
+      min-height: 100vh;
+    }
+
+    .frame {
+      max-width: 920px;
+      margin: 36px auto;
+      border: 1.25px solid var(--border);
+      background: rgba(255, 255, 255, 0.18);
+      padding: 24px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      border: 1px solid var(--border);
+      padding: 16px;
+      background: rgba(217, 217, 217, 0.12);
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+    }
+
+    .title {
+      margin: 0;
+      font-family: "Economica", sans-serif;
+      font-size: 44px;
+      line-height: 1;
+      color: var(--accent-1);
+      letter-spacing: 1px;
+    }
+
+    .nav {
+      margin-left: auto;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      font-family: "Economica", sans-serif;
+      text-decoration: none;
+      color: #000;
+      background: #6ab8c9;
+      border: 1px solid #000;
+      padding: 8px 14px;
+      letter-spacing: 1.2px;
+    }
+
+    .nav a.active { background: #2df37e; }
+
+    .content {
+      margin-top: 18px;
+      border: 1px solid #000;
+      padding: 30px;
+      background: var(--card);
+    }
+
+    .meta {
+      display: inline-block;
+      font-family: "Economica", sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: #538cfb;
+      border: 1px solid #000;
+      padding: 4px 8px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-family: "Economica", sans-serif;
+      font-size: 40px;
+      color: #4a0707;
+      letter-spacing: 1px;
+    }
+
+    p {
+      margin: 0 0 16px;
+      line-height: 1.7;
+      font-size: 21px;
+    }
+
+    .back {
+      margin-top: 22px;
+      display: inline-block;
+      font-family: "Economica", sans-serif;
+      text-decoration: none;
+      color: #000;
+      border: 1px solid #000;
+      background: #f99f35;
+      padding: 8px 12px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 780px) {
+      .frame { margin: 16px; padding: 14px; }
+      .header { flex-direction: column; align-items: flex-start; }
+      .title { font-size: 34px; }
+      .nav { margin-left: 0; }
+      h1 { font-size: 32px; }
+      p { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="frame">
+    <header class="header">
+      <img src="Asset 1@4x.png" alt="lordlyamigo logo" class="logo">
+      <div class="title">スリザン スライアンス</div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html" class="active">Blog</a>
+      </nav>
+    </header>
+
+    <article class="content">
+      <div class="meta">April 2026</div>
+      <h1>Writing Against Noise</h1>
+      <p>There is a speed at which ideas become decorative. They sound sharp for a moment, gather attention, and then evaporate before they can change anything. Most timelines reward that speed. They ask for reaction, not reflection.</p>
+      <p>Long-form writing does the opposite. It asks for commitment. A page does not let me hide behind a clever sentence if the thought underneath is weak. Each paragraph pressures the previous one, and eventually the writing reveals whether I understand what I am trying to say.</p>
+      <p>This is why writing has become a method of thinking rather than a way to display finished opinions. When I slow down, contradictions become visible. I notice where I am repeating borrowed language, where I am avoiding uncertainty, and where I am pretending confidence.</p>
+      <p>Noise is not just volume. Noise is the pressure to perform certainty in public before you have earned it in private. Writing against noise means protecting time for drafts that nobody sees and questions that do not resolve in a single sitting.</p>
+      <p>If an idea survives that process, it usually returns cleaner and more honest. It carries less posture and more weight. That is enough reason to keep writing this way.</p>
+      <a class="back" href="blog.html">Back to Blog</a>
+    </article>
+  </main>
+</body>
+</html>

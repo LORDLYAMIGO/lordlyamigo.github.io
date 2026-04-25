@@ -103,10 +103,23 @@
       gap: 12px;
     }
 
+    .post-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
     .post {
       border: 1px solid #000;
       padding: 14px;
       background: rgba(255, 255, 255, 0.84);
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .post-link:hover .post,
+    .post-link:focus-visible .post {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.94);
     }
 
     .meta {
@@ -176,21 +189,27 @@
     <section class="content">
       <h2>Blog</h2>
       <div class="post-list">
-        <article class="post">
-          <div class="meta">April 2026</div>
-          <h3>Writing Against Noise</h3>
-          <p>On using long-form writing as a way to think clearly in a fragmented online world, and why slowing down creates better ideas.</p>
-        </article>
-        <article class="post">
-          <div class="meta">March 2026</div>
-          <h3>Building With Texture</h3>
-          <p>How paper grain, imperfect borders, and vivid accent colors can make interfaces feel human and memorable without becoming cluttered.</p>
-        </article>
-        <article class="post">
-          <div class="meta">February 2026</div>
-          <h3>The Language Island</h3>
-          <p>A short note on linguistic isolates and what they reveal about migration, memory, and the fragile continuity of culture.</p>
-        </article>
+        <a class="post-link" href="blog-writing-against-noise.html" aria-label="Read Writing Against Noise">
+          <article class="post">
+            <div class="meta">April 2026</div>
+            <h3>Writing Against Noise</h3>
+            <p>On using long-form writing as a way to think clearly in a fragmented online world, and why slowing down creates better ideas.</p>
+          </article>
+        </a>
+        <a class="post-link" href="blog-building-with-texture.html" aria-label="Read Building With Texture">
+          <article class="post">
+            <div class="meta">March 2026</div>
+            <h3>Building With Texture</h3>
+            <p>How paper grain, imperfect borders, and vivid accent colors can make interfaces feel human and memorable without becoming cluttered.</p>
+          </article>
+        </a>
+        <a class="post-link" href="blog-the-language-island.html" aria-label="Read The Language Island">
+          <article class="post">
+            <div class="meta">February 2026</div>
+            <h3>The Language Island</h3>
+            <p>A short note on linguistic isolates and what they reveal about migration, memory, and the fragile continuity of culture.</p>
+          </article>
+        </a>
       </div>
     </section>
   </main>
